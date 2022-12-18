@@ -13,4 +13,4 @@ The program is intended to imitate Netflix's homepage, where you can see some mo
 * `JavaScript with Node:` Page dynamics and consumption of API
 
 # 📁 Project access
-You can [access the source code](https://github.com/ArturColen/NetflixClone) or [view the hosted page](https://arturcolen.github.io/NetflixClone/).
+You can [access the source code](https://github.com/ArturColen/NetflixClone) or [view the hosted page](https://netflix-artur.vercel.app).
