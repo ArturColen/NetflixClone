@@ -1,5 +1,5 @@
  // Constant for storing the elements present in the main tag of the HTML file
-const main = document.querySelector('main')
+const main = document.querySelector('main');
 
 // Import the API
 fetch(genres_list_http + new URLSearchParams({
@@ -10,7 +10,7 @@ fetch(genres_list_http + new URLSearchParams({
     data.genres.forEach(item => {
         fetchMoviesListByGenres(item.id, item.name)
     });
-})
+});
 
 // Constant to search the api for a list of movies by genre
 const fetchMoviesListByGenres = (id, genres) => {
@@ -21,9 +21,9 @@ const fetchMoviesListByGenres = (id, genres) => {
     }))
     .then(res => res.json())
     .then(data => {
-        makeCategoryElement(`${genres}_movies`, data.results)
+        makeCategoryElement(`${genres}_movies`, data.results);
     })
-    .catch(err => console.log(err)) // Error handling
+    .catch(err => console.log(err)); // Error handling
 }
 
 // Receive the category and the content it will bring
@@ -42,13 +42,13 @@ const makeCategoryElement = (category, data) => {
         </button> 
     </div>
     
-    `
-    makeCards(category, data)  
+    `;
+    makeCards(category, data); 
 }
 
 // Create the movie cards
 const makeCards = (id, data) => {
-    const movieContainer = document.getElementById(id)
+    const movieContainer = document.getElementById(id);
 
     data.forEach((item, i) => {
         if(item.backdrop_path == null) {
@@ -63,13 +63,13 @@ const makeCards = (id, data) => {
             <img src="${image_url}${item.backdrop_path}" alt="Poster">
             <p class="movie-title">${item.title}</p>
         </div>
-        `
+        `;
 
         // Import the scrolling function of the carousels
         if(i == data.length - 1) {
             setTimeout( () => {
                 setupScrolling()
-            }, 100)
+            }, 100);
         }
-    })
+    });
 }
