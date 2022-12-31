@@ -1,4 +1,4 @@
- // Constant for storing the elements present in the main tag of the HTML file
+ // Store the elements present in the main tag of the HTML file
 const main = document.querySelector('main');
 
 // Import the API
@@ -12,7 +12,7 @@ fetch(genres_list_http + new URLSearchParams({
     });
 });
 
-// Constant to search the api for a list of movies by genre
+// Search the API for a list of movies by genre
 const fetchMoviesListByGenres = (id, genres) => {
     fetch(movie_genres_http + new URLSearchParams({
         api_key: api_key,
