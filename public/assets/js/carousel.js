@@ -1,12 +1,10 @@
 const setupScrolling = () => {
-    // Store in a constant all elements with class movie-container
+    // Select the elements to be manipulated
     const container = [...document.querySelectorAll('.movie-container')];
-    // Store in constants the scroll buttons
     const nextBtn = [...document.querySelectorAll('.next-btn')];
     const prevBtn = [...document.querySelectorAll('.pre-btn')];
     
     container.forEach((item, i) => {
-        // Store the dimensions of the container 
         let containerDimensions = item.getBoundingClientRect();
         let containerWidth = containerDimensions.width;
 
