@@ -2,7 +2,7 @@
 const express = require('express')
 const path = require('path')
 
-// Constant for storing the application port
+// Storing the application port
 const port = 3333
 
 // Declare an initial path
