@@ -1,4 +1,4 @@
-# Recreating Netflix's homepage
+# Netflix's homepage
 
 The project was developed through a class made available by [Digital Innovation One](https://www.dio.me), with the objective of consolidating knowledge in Front-end development with HTML, CSS and JavaScript, as well as introducing Node.js studies.
 
