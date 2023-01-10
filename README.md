@@ -6,7 +6,7 @@ The project was developed through a class made available by [Digital Innovation 
 ## 🔨 Project functionality
 The program is intended to imitate Netflix's homepage, where you can see some movies in their respective categories. 
 
-## 💻 Technologies and techniques used 
+## 💻 Technologies used 
 * [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML): Page structuring, accessibility and semantics
 * [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS): Page styling and responsiveness
 * [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript): Dynamicity of the page and consumption of API
