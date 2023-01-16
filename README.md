@@ -7,9 +7,9 @@ The project was developed through a class made available by [Digital Innovation 
 The program is intended to imitate Netflix's homepage, where you can see some movies in their respective categories. 
 
 ## 💻 Technologies used 
-* [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML): Page structuring, accessibility and semantics
-* [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS): Page styling and responsiveness
-* [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript): Dynamicity of the page and consumption of API
+* [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML): page structuring, accessibility and semantics
+* [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS): page styling and responsiveness
+* [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript): dynamicity of the page and consumption of API
 
 ## 📁 Project access
 You can view the hosted page by clicking [here](https://netflix-artur.vercel.app).
