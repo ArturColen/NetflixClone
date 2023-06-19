@@ -1,7 +1,5 @@
- // Store the elements present in the main tag of the HTML file
 const main = document.querySelector('main');
 
-// Import the API
 fetch(genres_list_http + new URLSearchParams({
     api_key: api_key
 }))
@@ -12,7 +10,6 @@ fetch(genres_list_http + new URLSearchParams({
     });
 });
 
-// Search the API for a list of movies by genre
 const fetchMoviesListByGenres = (id, genres) => {
     fetch(movie_genres_http + new URLSearchParams({
         api_key: api_key,
@@ -23,10 +20,9 @@ const fetchMoviesListByGenres = (id, genres) => {
     .then(data => {
         makeCategoryElement(`${genres}_movies`, data.results);
     })
-    .catch(err => console.log(err)); // Error handling
+    .catch(err => console.log(err));
 }
 
-// Receive the category and the content it will bring
 const makeCategoryElement = (category, data) => {
     main.innerHTML += `
     <div class="movie-list">
@@ -46,7 +42,6 @@ const makeCategoryElement = (category, data) => {
     makeCards(category, data); 
 }
 
-// Create the movie cards
 const makeCards = (id, data) => {
     const movieContainer = document.getElementById(id);
 
@@ -65,7 +60,6 @@ const makeCards = (id, data) => {
         </div>
         `;
 
-        // Import the scrolling function of the carousels
         if(i == data.length - 1) {
             setTimeout( () => {
                 setupScrolling()
