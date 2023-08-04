@@ -9,7 +9,8 @@ The program is intended to imitate Netflix's homepage, where you can see some mo
 ## 💻 Technologies used 
 * [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML): page structuring, accessibility and semantics
 * [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS): page styling and responsiveness
-* [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript): dynamicity of the page and consumption of API
+* [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript): programming language
+* [Node.js](https://nodejs.org/pt-br/docs): allows the execution of JavaScript code outside the browser
 
 ## 📁 Project access
 You can view the hosted page by clicking [here](https://netflix-artur.vercel.app).
