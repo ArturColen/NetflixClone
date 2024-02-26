@@ -25,20 +25,20 @@ const fetchMoviesListByGenres = (id, genres) => {
 
 const makeCategoryElement = (category, data) => {
     main.innerHTML += `
-    <div class="movie-list">
-        <button class="pre-btn">
-            <img src="./assets/images/prev.png" alt="Botão para voltar">
-        </button>
-        <h1 class="movie-category">${category.replace('_', ' ')}</h1>
-        <div class="movie-container" id="${category}">
-                
+        <div class="movie-list">
+            <button class="pre-btn">
+                <img src="./assets/images/prev.png" alt="Botão para voltar">
+            </button>
+            <h1 class="movie-category">${category.replace('_', ' ')}</h1>
+            <div class="movie-container" id="${category}">
+                    
+            </div>
+            <button class="next-btn">
+                <img src="./assets/images/next.png" alt="Botão para prosseguir">
+            </button> 
         </div>
-        <button class="next-btn">
-            <img src="./assets/images/next.png" alt="Botão para prosseguir">
-        </button> 
-    </div>
-    
     `;
+
     makeCards(category, data); 
 }
 
@@ -46,21 +46,22 @@ const makeCards = (id, data) => {
     const movieContainer = document.getElementById(id);
 
     data.forEach((item, i) => {
-        if(item.backdrop_path == null) {
+        if (item.backdrop_path == null) {
             item.backdrop_path = item.poster_path;
+
             if (item.backdrop_path == null) {
                 return
             }
         }
 
         movieContainer.innerHTML += `
-        <div class="movie">
-            <img src="${image_url}${item.backdrop_path}" alt="Poster">
-            <p class="movie-title">${item.title}</p>
-        </div>
+            <div class="movie">
+                <img src="${image_url}${item.backdrop_path}" alt="Poster">
+                <p class="movie-title">${item.title}</p>
+            </div>
         `;
 
-        if(i == data.length - 1) {
+        if (i == data.length - 1) {
             setTimeout( () => {
                 setupScrolling()
             }, 100);
